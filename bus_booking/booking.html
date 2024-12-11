@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Bus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>BookMyBus</h1>
+    </header>
+    <main>
+        <form action="php/booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="bus">Select Bus:</label>
+            <select id="bus" name="bus" required>
+                <option value="bus1">Bus 1</option>
+                <option value="bus2">Bus 2</option>
+            </select>
+            
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </main>
+</body>
+</html>
